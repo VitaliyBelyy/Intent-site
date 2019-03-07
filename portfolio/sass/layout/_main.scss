@@ -1,0 +1,94 @@
+//STYLES FOR MAIN(Portfolio page)
+
+main.portfolio {
+  .page-heading-wrapper {
+    background: url("#{$icons}contact-heading.png") no-repeat top;
+    background-size: cover;
+    min-height: 150px;
+    .col-md-12 {
+      min-height: 150px;
+    }
+  }
+  .page-heading {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: -100px;
+    padding: 35px;
+    background: url("#{$icons}heading-container.png") no-repeat center;
+    font-family: $Bitter;
+    z-index: 1;
+    h1 {
+      color: #fff;
+      font-size: $fs-extra-large;
+      font-weight: 700;
+    }
+    p {
+      color: #d1d0d0;
+      font-weight: 700;
+    }
+  }
+  .works {
+    padding-top: 125px;
+    .row {
+      position: relative;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 15px 25px;
+      margin-bottom: -30px;
+      background: #fff;
+    }
+  }
+  .works-filter {
+    margin-bottom: 10px;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+      button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        color: #252525;
+        font-family: $Bitter;
+        padding: 8px;
+      }
+      &.active button {
+        background: #ea5a4b;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+  .work-wrapper {
+    display: block;
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    padding-top: 20px;
+    &:hover .overlay {
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 100%;
+    }
+    .overlay {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 8px;
+      background: rgba(0, 0, 0, .75);
+      font-family: $Bitter;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
+
+//STYLES FOR MAIN(Portfolio page)

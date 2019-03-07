@@ -1,0 +1,15 @@
+// Add @font-face or @import rules here
+$fonts: '../fonts';
+
+@font-face {
+  font-family: "BitterRegular";
+  src: url("#{$fonts}/Bitter/BitterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HalveticaNeueRegular";
+  src: url("#{$fonts}/HalveticaNeue/HelveticaNeueRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
